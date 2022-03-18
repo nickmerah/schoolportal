@@ -316,9 +316,9 @@ class Student extends Controller
 		}
 		
 				 ///get RRR
-			define("MERCHANTID", "5155065960");
-		    define("SERVICETYPEID", "6752225452"); // e revenue
-			 define("APIKEY", "168405");
+			define("MERCHANTID", "xx");
+		    define("SERVICETYPEID", "xxx"); // e revenue
+			 define("APIKEY", "xxx");
 			 define("GATEWAYURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit");
 			 define("GATEWAYRRRPAYMENTURL", "https://login.remita.net/remita/ecomm/finalize.reg");
 			 define("PATH", 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']));
@@ -342,13 +342,13 @@ class Student extends Controller
 				$itemid2="itemid2";
 				$itemid3="itemid3";
 				
-				$beneficiaryName="Katsina State College of Nursing";
-				$beneficiaryName2="Katsina State College of Nursing";
-				$beneficiaryName3="Atarah Consulting and Mentoring";
+				$beneficiaryName="xxxx";
+				$beneficiaryName2="xxx";
+				$beneficiaryName3="xxxx";
 
-				$beneficiaryAccount="1006379307";  //revenue
-				$beneficiaryAccount2="1006486193"; //custody
-				$beneficiaryAccount3="0061171696"; //atarah
+				$beneficiaryAccount="xxx";  //revenue
+				$beneficiaryAccount2="xxx"; //custody
+				$beneficiaryAccount3="xxx"; //atarah
 
 				$bankCode="082";
 				$bankCode2="082";
@@ -604,15 +604,15 @@ class Student extends Controller
 			//switch service type & acctno
 			if ($totalamt > 15000 or $acctype == 'custody') {
 			
-			 define("SERVICETYPEID", "7059813768"); // ecustody fee 
-			 $acctno = "1006486193";
+			 define("SERVICETYPEID", "xxx"); // ecustody fee 
+			 $acctno = "xx";
 			}else{
-				define("SERVICETYPEID", "5135210542"); // processing fee 
-			 $acctno = "1006379307";
+				define("SERVICETYPEID", "xxx"); // processing fee 
+			 $acctno = "xxx";
 			}
 			 
 			 
-			 define("APIKEY", "168405");
+			 define("APIKEY", "xxx");
 			 define("GATEWAYURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit");
 			 define("GATEWAYRRRPAYMENTURL", "https://login.remita.net/remita/ecomm/finalize.reg");
 			 define("PATH", 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']));
@@ -634,11 +634,11 @@ class Student extends Controller
 				$itemid1="itemid1";
 				$itemid2="itemid2";
 				
-				$beneficiaryName="Katsina State College of Nursing";
-				$beneficiaryName2="Atarah Consulting and Mentoring";
+				$beneficiaryName="xxx";
+				$beneficiaryName2="xxx";
 
 				$beneficiaryAccount="$acctno";  //revenue
-				$beneficiaryAccount2="0061171696"; //atarah
+				$beneficiaryAccount2="xxx"; //atarah
 
 				$bankCode="082";
 				$bankCode2="232";
@@ -1657,8 +1657,8 @@ class Student extends Controller
 	{
 		  $stdid =  session()->get('log_id') ;
 	        $orderId = $this->request->uri->getSegment(3);
-	         define("MERCHANTID", "5155065960");
-			 define("APIKEY", "168405");			
+	         define("MERCHANTID", "xxx");
+			 define("APIKEY", "xxx");			
 			 define("CHECKSTATUSURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc"); 
 			 
 			  
@@ -1836,8 +1836,8 @@ class Student extends Controller
 		</script>';
 			 }else{
 			 
-			 define("MERCHANTID", "5155065960");
-			 define("APIKEY", "168405");			
+			 define("MERCHANTID", "xxx");
+			 define("APIKEY", "xxx");			
 			 define("CHECKSTATUSURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc");
 			
 			
@@ -1930,13 +1930,13 @@ class Student extends Controller
 		    
 		    
 				 ///get RRR
-			define("MERCHANTID", "5155065960");
-		    define("SERVICETYPEID", "5135210542"); // processing fee 
-			 $acctno = "1006379307";
+			define("MERCHANTID", "xxx");
+		    define("SERVICETYPEID", "xxx"); // processing fee 
+			 $acctno = "xxxx";
 		 
 			 
 			 
-			 define("APIKEY", "168405");
+			 define("APIKEY", "xxxx");
 			 define("GATEWAYURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit");
 			 define("GATEWAYRRRPAYMENTURL", "https://login.remita.net/remita/ecomm/finalize.reg");
 			 define("PATH", 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']));
@@ -1958,11 +1958,11 @@ class Student extends Controller
 				$itemid1="itemid1";
 				$itemid2="itemid2";
 				
-				$beneficiaryName="Katsina State College of Nursing";
-				$beneficiaryName2="Atarah Consulting and Mentoring";
+				$beneficiaryName="xxx";
+				$beneficiaryName2="xxx";
 
 				$beneficiaryAccount="$acctno";  //revenue
-				$beneficiaryAccount2="0061171696"; //atarah
+				$beneficiaryAccount2="xxx"; // 
 
 				$bankCode="082";
 				$bankCode2="232";
@@ -2117,9 +2117,9 @@ class Student extends Controller
 		}
 		
 				 ///get RRR
-			define("MERCHANTID", "5155065960");
-			 define("SERVICETYPEID", "6752225452"); // e revenue
-			 define("APIKEY", "168405");
+			define("MERCHANTID", "xxx");
+			 define("SERVICETYPEID", "xxx"); // e revenue
+			 define("APIKEY", "xxx");
 			 define("GATEWAYURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit");
 			 define("GATEWAYRRRPAYMENTURL", "https://login.remita.net/remita/ecomm/finalize.reg");
 			 define("PATH", 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']));
@@ -2143,13 +2143,13 @@ class Student extends Controller
 				$itemid2="itemid2";
 				$itemid3="itemid3";
 				
-				$beneficiaryName="Katsina State College of Nursing";
-				$beneficiaryName2="Katsina State College of Nursing";
-				$beneficiaryName3="Atarah Consulting and Mentoring";
+				$beneficiaryName="xxx";
+				$beneficiaryName2="xxx";
+				$beneficiaryName3="xxx";
 
-				$beneficiaryAccount="1006379307";  //revenue
-				$beneficiaryAccount2="1006486193"; //custody
-				$beneficiaryAccount3="0061171696"; //atarah
+				$beneficiaryAccount="xx";  //revenue
+				$beneficiaryAccount2="xx"; //custody
+				$beneficiaryAccount3="xx"; //atarah
 
 				$bankCode="082";
 				$bankCode2="082";
@@ -2327,233 +2327,7 @@ class Student extends Controller
 		 
     }
     
-    
-    	public function paynow_partial()
-    {
-        
-        
-		 $accountModel = new AccountModel();
-	  	 
-		 
-         $data['stddetails'] =  $accountModel->getacctdetails(session()->get('log_id'));
-		$prog = $data['stddetails'][0]->stdprogramme_id;
-		 $fac = $data['stddetails'][0]->stdfaculty_id;
-		 $level = $data['stddetails'][0]->stdlevel;
-		 $new_return = $data['stddetails'][0]->std_status;
-		 
-		  $appno = $data['stddetails'][0]->matric_no;
-		  $surname = $data['stddetails'][0]->surname;
-		  $firstname = $data['stddetails'][0]->firstname;
-		  $othernames = $data['stddetails'][0]->othernames;
-		   $semail = $data['stddetails'][0]->student_email;
-		   $sgsm = $data['stddetails'][0]->student_mobiletel;
-		   $stdcourse = $data['stddetails'][0]->stdcourse;
-		    
-		    $sess = $accountModel->getsess($prog);
-		   
-		   $stateor = $data['stddetails'][0]->state_of_origin;
-		  if ($stateor == 20){
-		      $ind = 1;
-		      
-		  }else{
-		      $ind = 2;
-		      
-		  }
-		  
-		  //check eligibilty
-		  $exclude = $accountModel->exclude($appno);
-		  
-		   if (empty($exclude)) {
-				  echo '<script type="text/javascript">
-			alert("You are not Eligible for this service");
-			window.location = "'.base_url('student/fees').'";
-		</script>';
-			 }
-		   
-		 $feeModel = new FeeModel();
-		 
-	 	//  $checklatepay = $accountModel->getlatepay();  
-		 
-		 
-		  $latepay = $accountModel->getlatepay($prog);    
-		  
-	 
-		 
-		 
-		 $feedetails =  $feeModel->getfeedetails_partial($prog,$fac,$level,$new_return, $ind, $sess, $latepay);
-		 
-	
-		 
-		  if (empty($feedetails)) {
-				  echo '<script type="text/javascript">
-			alert("No Fee Details had been generated or Configured\nKindly confirm from bursary");
-			window.location = "'.base_url('student/fees').'";
-		</script>';
-			 }else{
-				
-				foreach($feedetails as $fee_detail){
-			$totalamt += $fee_detail->amount; 
-		}
-		
-				 ///get RRR
-			define("MERCHANTID", "5155065960");
-		    define("SERVICETYPEID", "6752225452"); // e revenue
-			 define("APIKEY", "168405");
-			 define("GATEWAYURL", "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit");
-			 define("GATEWAYRRRPAYMENTURL", "https://login.remita.net/remita/ecomm/finalize.reg");
-			 define("PATH", 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']));
-			 $portalfee =1200;
-			 $processingfee = 325;
-			 $totalAmount = $totalamt + $processingfee;
-           	 	$mytotal_amount = number_format($totalAmount);
-				$merchantId = MERCHANTID;
-				$timesammp=DATE("dmyHis");		
-				$orderID = $timesammp;
-				$payerName = "$surname $firstname $othernames - $appno";
-				$payerEmail =  $semail;
-				$payerPhone =  $sgsm;
-				$responseurl = PATH . "/remitaresponse.php";
-				$hash_string = MERCHANTID . SERVICETYPEID . $orderID . $totalAmount . APIKEY;
-				$hash = hash('sha512', $hash_string);
-				$itemtimestamp = $timesammp;
-
-
-				$itemid1="itemid1";
-				$itemid2="itemid2";
-				$itemid3="itemid3";
-				
-				$beneficiaryName="Katsina State College of Nursing";
-				$beneficiaryName2="Katsina State College of Nursing";
-				$beneficiaryName3="Atarah Consulting and Mentoring";
-
-				$beneficiaryAccount="1006379307";  //revenue
-				$beneficiaryAccount2="1006486193"; //custody
-				$beneficiaryAccount3="0061171696"; //atarah
-
-				$bankCode="082";
-				$bankCode2="082";
-				$bankCode3="232";
-
-				$techfee = $portalfee + $processingfee;
-				$school_share = $totalAmount - $techfee;
-				
-				
-				//get revenue
-				if ($stateor == 20){
-				 
-			$revenue  = 4000; 
-				}else{
-				  	$revenue  = 34000;  
-				}
-		//get custody
-		 
-			$custody  = 2700; 
-		     
-				 
-				 
- 
-				$beneficiaryAmount ="$revenue";
-				$beneficiaryAmount2 ="$custody";
-				$beneficiaryAmount3 ="$techfee";
-
-				$deductFeeFrom=0;
-				$deductFeeFrom2=0;
-				$deductFeeFrom3=1;
-
-	
-			     	 $content = '{"serviceTypeId":"'.SERVICETYPEID
-					.'"'.",".'"amount":"'.$totalAmount
-					.'","orderId":"'.$orderID
-					.'"'.',"payerName":"'. $payerName
-					.'"'.',"payerEmail":"'.$payerEmail
-					.'"'.",".'"payerPhone":"'.$payerPhone
-					.'","lineItems":[
-					{"lineItemsId":"'.$itemid1.'","beneficiaryName":"'.$beneficiaryName.'","beneficiaryAccount":"'.$beneficiaryAccount.'","bankCode":"'.$bankCode.'","beneficiaryAmount":"'.$beneficiaryAmount.'","deductFeeFrom":"'.$deductFeeFrom.'"},
-					{"lineItemsId":"'.$itemid2.'","beneficiaryName":"'.$beneficiaryName2.'","beneficiaryAccount":"'.$beneficiaryAccount2.'","bankCode":"'.$bankCode2.'","beneficiaryAmount":"'.$beneficiaryAmount2.'","deductFeeFrom":"'.$deductFeeFrom2.'"},
-					{"lineItemsId":"'.$itemid3.'","beneficiaryName":"'.$beneficiaryName3.'","beneficiaryAccount":"'.$beneficiaryAccount3.'","bankCode":"'.$bankCode3.'","beneficiaryAmount":"'.$beneficiaryAmount3.'","deductFeeFrom":"'.$deductFeeFrom3.'"}
-					]}'; 
-  
-					$curl = curl_init();
-					curl_setopt_array($curl, array(
- 					 CURLOPT_URL => GATEWAYURL,
-  					CURLOPT_RETURNTRANSFER => true,
-  					CURLOPT_SSL_VERIFYPEER => false,
-  					CURLOPT_ENCODING => "",
-  					CURLOPT_MAXREDIRS => 10,
- 				 	CURLOPT_TIMEOUT => 30,
-  					CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  					CURLOPT_CUSTOMREQUEST => "POST",
-  					CURLOPT_POSTFIELDS => $content,
-  					CURLOPT_HTTPHEADER => array(
-    				"Authorization: remitaConsumerKey=$merchantId,remitaConsumerToken=$hash",
-    				"Content-Type: application/json",
-    				"cache-control: no-cache"
-  					),
-					));   
-
-					$json_response = curl_exec($curl);
-					$err = curl_error($curl);
-					curl_close($curl);
- //var_dump($json_response);  exit;
-					$jsonData = substr($json_response, 7, -1);
-					$response = json_decode($jsonData, true);  
-					$statuscode = $response['statuscode'];
-					if($statuscode=='025'){
-        $rrr = trim($response['RRR']); 
- 					
-
-//end get RRR
-	    $tid = session()->get('log_id').$timesammp;
-		$fdate = date('Y-m-d h:i:s');
-		$tdate = date('Y-m-d');
-		foreach($feedetails as $feedetail){
-			 
-		
-		$data = [
-            'log_id' => session()->get('log_id'),
-            'trans_name'  => $feedetail->field_name,
-			'trans_no' => $tid,
-			'user_faculty' => $fac,
-			'trans_amount' => $feedetail->amount,
-			'generated_date' => $fdate,
-			'trans_date' => $fdate,
-			't_date' => $tdate,
-			't_date' => $tdate,
-			'levelid' => $level,
-			'trans_year' => $sess,
-			'fullnames' => "$surname $firstname $othernames",
-			'prog_id' => $prog,
-			'stdcourse' => $stdcourse,
-			'appno' => $appno,
-			'channel' => "Remita",
-			'fee_id' => $feedetail->item_id,
-			'fee_type' => "fees",
-			'rrr' => $rrr,
-        ]; 
-	 	$studentModel = new StudentModel();
-		$studentModel->save_transaction($data);
-		
-}
-			echo '<script type="text/javascript">
-			alert("You will be redirected to the payment gateway\n Your  RRR for Payment is '.$rrr.' \n Payment can be made using your ATM Card or at any Bank Branch");
-			window.location = "paymentslip/'.$rrr.'";
-		</script>';
-			
-					}else{
-					    
-					    	echo '<script type="text/javascript">
-			alert("There is an issue generating Remita RRR\n Kindly check back later and bear with Us");
-			window.location = "fees";
-		</script>';
-					    
-					}
-					
-					
-					
-				 
-		
-			 }
-    }
+     
     
     
     public function payhostelfee()
@@ -2688,7 +2462,7 @@ class Student extends Controller
    		 CURLOPT_CUSTOMREQUEST => "GET",
    		 CURLOPT_HTTPHEADER => array(
     		  "Content-Type: application/json",
-    	  "Authorization: Bearer FLWSECK-6acc7a074a5c6b00a990ea87ca374649-X"
+    	  "Authorization: Bearer FLWSECK-xxxx-X"
      
     ),
   ));
